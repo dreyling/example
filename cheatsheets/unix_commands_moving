@@ -1,0 +1,39 @@
+-----------------------
+Windows:
+
+Alt Tab
+Ctrl Alt Up/Down/Left/Right
+Alt F7 --> Up/Down/Left/Right --> Enter/Esc
+Alt F8 --> Up/Down/Left/Right --> Enter/Esc
+
+-----------------------
+In a shell/command line
+
+Tab completion!
+
+Scrolling output:
+Shift PgUp/PgDn
+Shift Ctrl Up/Down
+
+Last commands:
+Up/Down
+Ctrl r --> type name
+Alt (n-times) .
+
+Jumping in the command line
+Ctrl A
+Ctrl E
+
+-----------------------
+Showing files using
+less, man, vi, vim
+
+Move:
+j/k, h/l
+Ctrl b / Ctrl b
+gg / Shift g
+
+Search: 
+/ --> type name
+
+

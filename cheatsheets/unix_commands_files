@@ -1,0 +1,56 @@
+Info
+----
+pwd
+man 
+ls -a -l
+w, who, last
+type COMMAND
+which COMMAND
+
+Info on PC
+----------
+df -h
+du -h -d 1
+uname -a
+lsusb
+lspci
+env 
+
+Browsing
+--------
+cd PATH
+cd 
+cd .. (alias)
+cd -
+
+
+Manipulating
+------------
+touch  
+mkdir
+chmod
+cp -r
+mv
+
+
+Two Pcs, 2 shells
+ssh 
+ssh -X
+
+scp 
+
+nohup
+https://bharatikunal.wordpress.com/2010/10/20/scp-as-a-background-process/
+screen, cron, at
+
+
+disown
+http://unix.stackexchange.com/questions/65116/does-a-scp-transfer-close-when-i-close-the-shell
+1. Open ssh terminal to remote server
+2. Begin scp transfer as usual
+3. Background the scp process (Ctrl+Z, then bg)
+4. Disown the backgrounded process (disown)
+5. Terminate the session (exit) and the process will continue to run on the remote machine.
+
+rsync 
+http://stackoverflow.com/questions/20244585/how-does-scp-differ-from-rsync

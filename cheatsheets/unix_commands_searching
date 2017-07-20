@@ -1,0 +1,18 @@
+firther Wildcards: ?, [abc], [a-o], [!abc], ...
+glob *
+
+
+find
+find . -name *sample
+
+grep, fgrep, igrep
+grep -n
+
+--> search for files
+
+find . | grep .txt
+find . | grep .txt$ 
+
+locate
+
+Regular expressions!

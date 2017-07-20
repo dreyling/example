@@ -1,0 +1,37 @@
+execute program in background &
+
+sequential executing: cmd1 && cmd2
+
+Streaming >
+echo "Hello World" > test.txt
+
+Adding in a new line >>
+echo "Hello World again" >> test.txt
+
+piping |
+ps aux | grep jande
+kill PID
+
+diff 
+
+wc 
+
+---
+
+sort
+
+sed
+
+awk 
+
+Scripting
+---------
+
+*.sh files
+execute: 
+source *.sh
+. *.sh
+
+#!/bin/bash
+
+
