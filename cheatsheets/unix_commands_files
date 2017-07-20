@@ -1,6 +1,7 @@
 Info
 ----
 pwd
+history
 man 
 ls -a -l
 w, who, last
@@ -15,6 +16,8 @@ uname -a
 lsusb
 lspci
 env 
+dmesg
+ps aux
 
 Browsing
 --------
