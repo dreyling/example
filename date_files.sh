@@ -1,19 +1,25 @@
 #!/bin/bash
+
+# is there an argument, if no quit (return)
 if [[ $# -eq 0 ]] ; then
-    echo "please give one argument, which is the folder/base name"
+    echo "please give one argument, which is the folder"
     return
 fi
 
-BASENAME=$1
-echo "this is the basename: $BASENAME"
+# define the current date, using `command` to get the output of the command 
 DATE=`date +%y%m%d`
+# or use the $(command) syntax
+# DATE=$(date +%y%m%d)
 
-cd $BASENAME
+# go into the folder, which is the 1str argument
+cd $1
 
+# loop over all (*) files 
 for files in *
 do 
     echo "$DATE"_"$files"
     mv $files "$DATE"_"$files"
 done
 
-cd ..
+# go to last folder
+cd -
