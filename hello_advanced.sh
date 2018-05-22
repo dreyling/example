@@ -1,7 +1,8 @@
 #!/bin/bash
 
 # defining a variable system wide
-export VARIABLE="Hello World"
+export VARIABLE=""
+VARIABLE="Hello World"
 
 echo VARIABLE
 # access the variable
