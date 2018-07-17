@@ -63,7 +63,7 @@ Developing/Coding/Working flexibly and effectively.
     * "pull request":  ```git pull``` or ```git pull <remote> <branch>```
  4. more: branching and merging
     * ```git branch -avv```
-    * create local branch incl. upstream connectio ```git checkout 
+    * create local branch incl. upstream connection ```git checkout -b <local name> <remote name/branch name>``` 
 
 ## Example 2: Create your own repository
 
