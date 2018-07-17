@@ -68,6 +68,7 @@ Developing/Coding/Working flexibly and effectively.
 ## Example 2: Create your own repository
 
  1. initialise a repo (local)
+    * for example [a Latex template for your report](https://desycloud.desy.de/index.php/s/ftPZTjfpCZqMTcJ)
     * ```git init```
  2. initial commit  
  3. create a remote repo on [github](https://github.com/new) or [gitlab]
