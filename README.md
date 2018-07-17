@@ -1,9 +1,16 @@
-# Ingredients
+# Introduction
 
- * git (e.g. in Ubuntu "sudo apt-get install git") or a GUI client
- * github account, [sign up](https://github.com/join?source=header-home)
 
-# Why git/github?
+## Why UNIX? 
+
+Using Windows, you can do nothing, but everything works.  
+Using UNIX, you can do everything, but nothing works.
+
+## Why using a shell? 
+
+Developing/Coding/Working flexibly and effectively. 
+
+## Why git?
 
  * a repository
    * historical storage of a work process
@@ -15,27 +22,58 @@
    * undoing development
    * tagging a version/release
    * collaborative code development 
-   * github: documentation (README.md, wiki, www)
-   * github: issue tracker 
-   * github: nightly builds
+   * githubi/gitlab/...: documentation (README.md, wiki, www)
+   * github/gitlab/...: issue tracker 
+   * github/gitlab/...: nightly builds
 
  * in addition:
    * philosophy of modularity: commiting many small changes provides clarity
    * check in only code, not compiled stuff; adjust your .gitignore file
 
+# Tutorial
 
-# Example 1: Create your own repository
+## Installation
+ 
+ * Local program: git (e.g. in Ubuntu "sudo apt-get install git") or GUI client; settings:
+    * ```git config --global user.name "name"```
+    * ```git config --global user.email "mail"```
+ * Remote repo: github/gitlab/... account, [sign up](https://github.com/join?source=header-home)
+
+## Example 1: Getting and developing on an existing repository
+
+ 1. clone the repository
+    * ```git clone <remote name.git>```
+    * Optionally, forking and setting two remotes
+      * ```git remote -v```
+      * ```git remote add <local name> <remote name.git>```
+ 2. browsing the code history and changes
+    * ```git status```
+    * ```git log```
+    * ```git show```
+    * ```git diff```
+ 3. edit something and "save" locally
+    * check in between with ```git status```
+    * ```git add <changed file>```
+    * ```git commit -m "message"```
+    * status, edit, ..., 
+    *  push the code (local)
+ 4. update remote repo
+    * first checking possible changes: ```git pull``` means ```git pull <remote> <branch>```
+    * (if needed, solve merge conflicts)  
+    * "pull request":  ```git pull``` or ```git pull <remote> <branch>```
+ 4. more: branching and merging
+    * ```git branch -avv```
+    * create local branch incl. upstream connection ```git checkout -b <local name> <remote name/branch name>``` 
+
+## Example 2: Create your own repository
 
  1. initialise a repo (local)
- 2. [create a github repo:](https://github.com/new)
- 3. push local repo to githun repo
+    * ```git init```
+ 2. initial commit  
+ 3. create a remote repo on [github](https://github.com/new) or [gitlab]
+ 4. push local repo to remote repo
 
 
-# Example 2: Getting/developing on an existing repository
-
- 1. fork the repository (github)
- 2. clone, edit, test, edit, ..., push the code (local)
- 3. clone origin repo, merge and "pull request"
 
 # References
 * [official cheatsheet](https://services.github.com/on-demand/downloads/github-git-cheat-sheet.pdf)
